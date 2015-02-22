@@ -163,8 +163,7 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 3%;
-  margin-bottom: 5%; }
+  padding: 0 3%; }
   .container::after {
     clear: both;
     content: "";
@@ -239,6 +238,7 @@ li {
   margin: 0; }
 
 p {
+  margin: 1% 0;
   line-height: 1.7;
   font-size: 1.1em; }
 
@@ -253,9 +253,9 @@ strong {
   font-size: 1.5em;
   text-decoration: none;
   background: #36cd62;
-  border-radius: 5px;
   letter-spacing: 1px;
-  color: #fff; }
+  color: #fff;
+  border-bottom: 4px solid #2DB453; }
   .btn:hover {
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -364,3 +364,163 @@ header {
     margin-right: 0; }
   .index .cta a {
     width: 100%; }
+.index .testimonial {
+  margin-top: 5%;
+  padding: 3% 0;
+  clear: both;
+  text-align: center;
+  background: url("/assets/congruent_outline.png"); }
+  .index .testimonial img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 1px #aaa;
+    -webkit-box-shadow: 0 0 1px #aaa; }
+  .index .testimonial span {
+    display: block;
+    margin-top: 2%;
+    color: #fff;
+    font-size: .7em; }
+  .index .testimonial blockquote {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 61.61588%;
+    margin-left: 19.19206%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 1.7em;
+    color: #fff; }
+    .index .testimonial blockquote:last-child {
+      margin-right: 0; }
+.index .pricing {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 5%;
+  text-align: center; }
+  .index .pricing:last-child {
+    margin-right: 0; }
+  .index .pricing h2 {
+    margin-top: 0;
+    margin-bottom: 3%;
+    font-size: 3em; }
+  .index .pricing .pricing-option {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    padding: 10px 10px 5px;
+    border: 2px solid #ccc; }
+    .index .pricing .pricing-option:last-child {
+      margin-right: 0; }
+    .index .pricing .pricing-option strong {
+      display: block;
+      margin-top: 2%;
+      margin-bottom: 3%;
+      font-size: 2em; }
+    .index .pricing .pricing-option p {
+      font-size: 1.2em; }
+      .index .pricing .pricing-option p i {
+        font-size: 1.2em;
+        color: #36cd62;
+        vertical-align: middle; }
+    .index .pricing .pricing-option .btn {
+      width: 90%;
+      margin: 5% 0;
+      padding: 15px;
+      font-size: 1.1em; }
+.index .faq {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 7%; }
+  .index .faq:last-child {
+    margin-right: 0; }
+  .index .faq h2 {
+    margin-bottom: 3%;
+    margin-top: 0;
+    font-size: 3em;
+    text-align: center; }
+  .index .faq .faq-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-bottom: 2%;
+    vertical-align: top; }
+    .index .faq .faq-item:last-child {
+      margin-right: 0; }
+    .index .faq .faq-item strong {
+      font-size: 1.6em; }
+    .index .faq .faq-item p {
+      margin-top: 2%;
+      font-size: 1.1em; }
+  .index .faq .faq-item:nth-of-type(even) {
+    margin-right: 0; }
+
+/* ----------------------------------------
+  
+  PODCAST
+
+---------------------------------------- */
+.podcast .podcast-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .podcast .podcast-info:last-child {
+    margin-right: 0; }
+  .podcast .podcast-info h2 {
+    margin-bottom: 2%;
+    text-align: center; }
+  .podcast .podcast-info p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-left: 21.32451%;
+    font-size: 1.3em; }
+    .podcast .podcast-info p:last-child {
+      margin-right: 0; }
+    .podcast .podcast-info p a {
+      color: #36cd62; }
+
+/* ----------------------------------------
+  
+  FOOTER
+
+---------------------------------------- */
+footer {
+  margin-top: 10%;
+  padding: 2% 0 3%;
+  text-align: center;
+  background: url("/assets/congruent_outline.png"); }
+  footer nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 7%; }
+    footer nav:last-child {
+      margin-right: 0; }
+    footer nav ul li {
+      display: inline-block;
+      margin: 0 3%; }
+      footer nav ul li a {
+        display: inline-block;
+        padding: 10px 10px 2px;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-bottom: 2px solid #36cd62;
+        color: #fff; }
+        footer nav ul li a:hover {
+          color: #36cd62; }
+  footer .copyright {
+    color: #fff; }
+    footer .copyright a {
+      color: #fff; }
