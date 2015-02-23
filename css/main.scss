@@ -33,6 +33,22 @@ $color-2: #2DB453;
   font-family: 'Rokkitt', serif;
   font-weight: 700;
 }
+@mixin button {
+  display: inline-block;
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  background: $color-1;
+  letter-spacing: 1px;
+  color: #fff;
+  border: none;
+  border-bottom: 4px solid $color-2;
+  &:hover {
+    @include transition;
+    opacity: .8;
+  }
+}
 
 // Omega Reset
 @mixin omega-reset($nth) {
@@ -99,10 +115,10 @@ h3 {
   font-size: 2em;
 }
 h4 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 h6 {
   font-size: 1em;
@@ -121,19 +137,7 @@ strong {
   @include font-1-bold;
 }
 .btn {
-  display: inline-block;
-  padding: 20px 15px;
-  text-align: center;
-  font-size: 1.5em;
-  text-decoration: none;
-  background: $color-1;
-  letter-spacing: 1px;
-  color: #fff;
-  border-bottom: 4px solid $color-2;
-  &:hover {
-    @include transition;
-    opacity: .8;
-  }
+  @include button;
 }
 hr {
   margin-top: 5%;
@@ -256,9 +260,7 @@ header {
       width: 200px;
       margin: 0 auto;
       border-radius: 50%;
-      border: 1px solid #aaa;
-      box-shadow: 0 0 1px #aaa;
-      -webkit-box-shadow: 0 0 1px #aaa;
+      border: 2px solid #ccc;
     }
     span {
       display: block;
@@ -272,6 +274,7 @@ header {
       margin-top: 2%;
       margin-bottom: 0;
       font-size: 1.7em;
+      letter-spacing: 1px;
       color: #fff;
     }
   }
@@ -398,5 +401,87 @@ footer {
     a {
       color: #fff;
     }
+  }
+}
+
+
+/* ----------------------------------------
+  
+  CONTACT
+
+---------------------------------------- */
+.contact {
+  margin-top: 3%;
+  h4 {
+    margin-bottom: 1%;
+    text-align: center;
+    a {
+      color: $color-1;
+    }
+  }
+}
+
+/* ----------------------------------------
+  
+  WUFOO
+
+---------------------------------------- */
+.wufoo {
+  @include span-columns(12);
+  margin-top: 3%;
+  padding: 3%;
+  border: 2px solid $color-1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  @include respond-to(768) {
+    @include span-columns(6);
+    @include shift(3);
+  }
+  span {
+    color: red;
+    font-size: 1.3em;
+  }
+  label {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    @include font-1;
+    width: 100%;
+    margin-bottom: 7%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    color: #666;
+  }
+  input[type="text"],
+  input[type="email"] {
+    height: 50px;
+  }
+  input[type="tel"] {
+    width: 20%;
+    height: 50px;
+    margin-right: 5%;
+    text-align: center;
+  }
+  select {
+    height: 50px;
+  }
+  textarea {
+    height: 200px;
+    font-size: 1em;
+  }
+  input[type="submit"] {
+    @include button;
+    width: 100%;
+  }
+  .hide {
+    display: none;
   }
 }

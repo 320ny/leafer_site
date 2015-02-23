@@ -224,10 +224,10 @@ h3 {
   font-size: 2em; }
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.5em; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1.25em; }
 
 h6 {
   font-size: 1em; }
@@ -255,6 +255,7 @@ strong {
   background: #36cd62;
   letter-spacing: 1px;
   color: #fff;
+  border: none;
   border-bottom: 4px solid #2DB453; }
   .btn:hover {
     -webkit-transition: all 0.2s linear;
@@ -375,9 +376,7 @@ header {
     width: 200px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 1px solid #aaa;
-    box-shadow: 0 0 1px #aaa;
-    -webkit-box-shadow: 0 0 1px #aaa; }
+    border: 2px solid #ccc; }
   .index .testimonial span {
     display: block;
     margin-top: 2%;
@@ -392,6 +391,7 @@ header {
     margin-top: 2%;
     margin-bottom: 0;
     font-size: 1.7em;
+    letter-spacing: 1px;
     color: #fff; }
     .index .testimonial blockquote:last-child {
       margin-right: 0; }
@@ -524,3 +524,96 @@ footer {
     color: #fff; }
     footer .copyright a {
       color: #fff; }
+
+/* ----------------------------------------
+  
+  CONTACT
+
+---------------------------------------- */
+.contact {
+  margin-top: 3%; }
+  .contact h4 {
+    margin-bottom: 1%;
+    text-align: center; }
+    .contact h4 a {
+      color: #36cd62; }
+
+/* ----------------------------------------
+  
+  WUFOO
+
+---------------------------------------- */
+.wufoo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 3%;
+  padding: 3%;
+  border: 2px solid #36cd62;
+  border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  .wufoo:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 768px) {
+    .wufoo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      .wufoo:last-child {
+        margin-right: 0; } }
+  .wufoo span {
+    color: red;
+    font-size: 1.3em; }
+  .wufoo label {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+    font-weight: 700; }
+  .wufoo input[type="text"],
+  .wufoo input[type="email"],
+  .wufoo input[type="tel"],
+  .wufoo select,
+  .wufoo textarea {
+    font-family: 'Rokkitt', serif;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 7%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    color: #666; }
+  .wufoo input[type="text"],
+  .wufoo input[type="email"] {
+    height: 50px; }
+  .wufoo input[type="tel"] {
+    width: 20%;
+    height: 50px;
+    margin-right: 5%;
+    text-align: center; }
+  .wufoo select {
+    height: 50px; }
+  .wufoo textarea {
+    height: 200px;
+    font-size: 1em; }
+  .wufoo input[type="submit"] {
+    display: inline-block;
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    background: #36cd62;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border-bottom: 4px solid #2DB453;
+    width: 100%; }
+    .wufoo input[type="submit"]:hover {
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      opacity: .8; }
+  .wufoo .hide {
+    display: none; }
