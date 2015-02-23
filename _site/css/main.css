@@ -356,7 +356,7 @@ header {
       vertical-align: middle; }
     .index .value-statement-wrapper .value-statement p {
       margin-top: 3%;
-      padding: 0 5%; }
+      text-align: left; }
 .index .cta {
   float: left;
   display: block;
