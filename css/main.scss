@@ -157,9 +157,9 @@ header {
   position: relative;
   .logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
+    top: 17px;
+    left: 17px;
+    width: 123px;
   }
   ul {
     display: block;
@@ -185,19 +185,20 @@ header {
   }
   .support-nav-link {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    text-decoration: none;
-    border: 2px solid #999;
-    color: #999;
+    top: 16px;
+    right: 16px;
     padding: 10px 15px;
+    border-bottom: 4px solid #777;
+    text-decoration: none;
+    color: #fff;
+    background: #999;
     &:hover {
-      background: #999;
-      color: #fff;
+      @include transition;
+      opacity: .8;
     }
     i {
       font-size: 1.2em;
-      vertical-align: middle;
+      vertical-align: bottom;
     }
   }
 }
@@ -381,7 +382,7 @@ footer {
     ul {
       li {
         display: inline-block;
-        margin: 0 3%;
+        margin: 0 2%;
         a {
           display: inline-block;
           padding: 10px 10px 2px;
@@ -400,6 +401,7 @@ footer {
     color: #fff;
     a {
       color: #fff;
+      text-decoration: none;
     }
   }
 }
@@ -428,11 +430,8 @@ footer {
 ---------------------------------------- */
 .wufoo {
   @include span-columns(12);
-  margin-top: 3%;
-  padding: 3%;
+  padding: 2%;
   border: 2px solid $color-1;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
   @include respond-to(768) {
     @include span-columns(6);
     @include shift(3);
@@ -444,7 +443,7 @@ footer {
   label {
     display: block;
     margin-bottom: 2%;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 700;
   }
   input[type="text"],
