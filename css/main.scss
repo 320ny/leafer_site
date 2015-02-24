@@ -49,7 +49,6 @@ $color-2: #2DB453;
     opacity: .8;
   }
 }
-
 // Omega Reset
 @mixin omega-reset($nth) {
   &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }
@@ -156,21 +155,36 @@ hr {
 header {
   position: relative;
   .logo {
-    position: absolute;
-    top: 17px;
-    left: 17px;
+    display: block;
+    position: static;
     width: 123px;
+    margin: 3% auto 0;
+    @include respond-to(600) {
+      display: inline-block;
+      position: absolute;
+      top: 17px;
+      left: 17px;
+      width: 123px;
+      margin-top: 0;
+    }
   }
   ul {
     display: block;
-    width: 60%;
-    height: 75px;
+    width: 100%;
+    height: 70px;
     margin: 0 auto;
     text-align: center;
+    @include respond-to(600) {
+      width: 60%;
+      height: 75px;
+    }
     li {
       display: inline-block;
-      margin: 0 3%;
+      margin: 0 2%;
       height: 75px;
+      @include respond-to(600) {
+        margin: 0 3%;
+      }
       a {
         display: inline-block;
         padding: 26px 10px 2px;
@@ -182,19 +196,29 @@ header {
         }
       }
     }
+    .touch-only {
+      display: inline-block;
+      @include respond-to(600) {
+        display: none;
+      }
+    }
   }
   .support-nav-link {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    padding: 10px 15px;
-    border-bottom: 4px solid #777;
-    text-decoration: none;
-    color: #fff;
-    background: #999;
-    &:hover {
-      @include transition;
-      opacity: .8;
+    display: none;
+    @include respond-to(600) {
+      display: block;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 10px 15px;
+      border-bottom: 4px solid #777;
+      text-decoration: none;
+      color: #fff;
+      background: #999;
+      &:hover {
+        @include transition;
+        opacity: .8;
+      }
     }
     i {
       font-size: 1.2em;
@@ -215,8 +239,14 @@ header {
     background: url("/assets/congruent_outline.png"); 
     h1 {
       margin: 0;
+      padding: 0 1%;
       text-align: center;
+      font-size: 2em;
       color: #fff;
+      @include respond-to(600) {
+        padding: 0;
+        font-size: 2.75em;
+      }
     }
     .callout-asset {
       width: 60%;
@@ -226,28 +256,48 @@ header {
   .value-statement-wrapper {
     @include span-columns(12);
     margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
     .value-statement {
-      @include span-columns(4);
+      @include span-columns(12);
       h3 {
         margin: 2% 0 0;
+        font-size: 1.5em;
+        @include respond-to(600) {
+          font-size: 2em;
+        }
       }
       i {
-        font-size: 4.5em;
+        font-size: 3.5em;
         vertical-align: middle;
+        @include respond-to(600) {
+          font-size: 4.5em;
+        }
       }
       p {
         margin-top: 3%;
         text-align: left;
       }
+      @include respond-to(600) {
+        @include span-columns(4);
+        margin-bottom: 0;
+      }
     }
   }
   .cta {
-    @include span-columns(3.5);
-    @include shift(4.25);
+    @include span-columns(12);
+    @include shift(0);
     margin-top: 5%;
     a {
       width: 100%;
+    }
+    @include respond-to(600) {
+      @include span-columns(5.5);
+      @include shift(3.25);
+    }
+    @include respond-to(950) {
+      @include span-columns(3.5);
+      @include shift(4.25);
     }
   }
   .testimonial {
@@ -270,13 +320,17 @@ header {
       font-size: .7em;
     }
     blockquote {
-      @include span-columns(7.5);
-      @include shift(2.25);
+      @include span-columns(12);
+      @include shift(0);
       margin-top: 2%;
       margin-bottom: 0;
       font-size: 1.7em;
       letter-spacing: 1px;
       color: #fff;
+      @include respond-to(600) {
+        @include span-columns(7.5);
+        @include shift(2.25);
+      }
     }
   }
   .pricing {
@@ -286,12 +340,20 @@ header {
     h2 {
       margin-top: 0;
       margin-bottom: 3%;
-      font-size: 3em;
+      font-size: 2.5em;
+      @include respond-to(600) {
+        font-size: 3em;
+      }
     }
     .pricing-option {
-      @include span-columns(4);
+      @include span-columns(12);
+      margin-bottom: 5%;
       padding: 10px 10px 5px;
       border: 2px solid #ccc;
+      @include respond-to(600) {
+        @include span-columns(4);
+        margin-bottom: 0;
+      }
       strong {
         display: block;
         margin-top: 2%;
@@ -320,13 +382,20 @@ header {
     h2 {
       margin-bottom: 3%;
       margin-top: 0;
-      font-size: 3em;
+      font-size: 2.5em;
       text-align: center;
+      @include respond-to(600) {
+        font-size: 3em;
+      }
     }
     .faq-item {
-      @include span-columns(6);
-      margin-bottom: 2%;
+      @include span-columns(12);
+      margin-bottom: 5%;
       vertical-align: top;
+      @include respond-to(600) {
+        @include span-columns(6);
+        margin-bottom: 2%;
+      }
       strong {
         font-size: 1.6em;
       }
@@ -355,11 +424,15 @@ header {
       text-align: center;
     }
     p {
-      @include span-columns(7);
-      @include shift(2.5);
+      @include span-columns(12);
+      @include shift(0);
       font-size: 1.3em;
       a {
         color: $color-1;
+      }
+      @include respond-to(600) {
+        @include span-columns(7);
+        @include shift(2.5);
       }
     }
   }
@@ -382,7 +455,10 @@ footer {
     ul {
       li {
         display: inline-block;
-        margin: 0 2%;
+        margin: 0 2% 5%;
+        @include respond-to(600) {
+          margin: 0 2%;
+        }
         a {
           display: inline-block;
           padding: 10px 10px 2px;

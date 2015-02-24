@@ -278,20 +278,35 @@ hr {
 header {
   position: relative; }
   header .logo {
-    position: absolute;
-    top: 17px;
-    left: 17px;
-    width: 123px; }
+    display: block;
+    position: static;
+    width: 123px;
+    margin: 3% auto 0; }
+    @media only screen and (min-width: 600px) {
+      header .logo {
+        display: inline-block;
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        width: 123px;
+        margin-top: 0; } }
   header ul {
     display: block;
-    width: 60%;
-    height: 75px;
+    width: 100%;
+    height: 70px;
     margin: 0 auto;
     text-align: center; }
+    @media only screen and (min-width: 600px) {
+      header ul {
+        width: 60%;
+        height: 75px; } }
     header ul li {
       display: inline-block;
-      margin: 0 3%;
+      margin: 0 2%;
       height: 75px; }
+      @media only screen and (min-width: 600px) {
+        header ul li {
+          margin: 0 3%; } }
       header ul li a {
         display: inline-block;
         padding: 26px 10px 2px;
@@ -300,20 +315,29 @@ header {
         border-bottom: 2px solid #36cd62; }
         header ul li a:hover {
           color: #36cd62; }
+    header ul .touch-only {
+      display: inline-block; }
+      @media only screen and (min-width: 600px) {
+        header ul .touch-only {
+          display: none; } }
   header .support-nav-link {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    padding: 10px 15px;
-    border-bottom: 4px solid #777;
-    text-decoration: none;
-    color: #fff;
-    background: #999; }
-    header .support-nav-link:hover {
-      -webkit-transition: all 0.2s linear;
-      -moz-transition: all 0.2s linear;
-      -o-transition: all 0.2s linear;
-      opacity: .8; }
+    display: none; }
+    @media only screen and (min-width: 600px) {
+      header .support-nav-link {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        padding: 10px 15px;
+        border-bottom: 4px solid #777;
+        text-decoration: none;
+        color: #fff;
+        background: #999; }
+        header .support-nav-link:hover {
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+          opacity: .8; } }
     header .support-nav-link i {
       font-size: 1.2em;
       vertical-align: bottom; }
@@ -328,8 +352,14 @@ header {
   background: url("/assets/congruent_outline.png"); }
   .index .callout-wrapper h1 {
     margin: 0;
+    padding: 0 1%;
     text-align: center;
+    font-size: 2em;
     color: #fff; }
+    @media only screen and (min-width: 600px) {
+      .index .callout-wrapper h1 {
+        padding: 0;
+        font-size: 2.75em; } }
   .index .callout-wrapper .callout-asset {
     width: 60%;
     margin: 3% auto 0; }
@@ -339,6 +369,7 @@ header {
   margin-right: 2.35765%;
   width: 100%;
   margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center; }
   .index .value-statement-wrapper:last-child {
     margin-right: 0; }
@@ -346,28 +377,62 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 100%; }
     .index .value-statement-wrapper .value-statement:last-child {
       margin-right: 0; }
     .index .value-statement-wrapper .value-statement h3 {
-      margin: 2% 0 0; }
+      margin: 2% 0 0;
+      font-size: 1.5em; }
+      @media only screen and (min-width: 600px) {
+        .index .value-statement-wrapper .value-statement h3 {
+          font-size: 2em; } }
     .index .value-statement-wrapper .value-statement i {
-      font-size: 4.5em;
+      font-size: 3.5em;
       vertical-align: middle; }
+      @media only screen and (min-width: 600px) {
+        .index .value-statement-wrapper .value-statement i {
+          font-size: 4.5em; } }
     .index .value-statement-wrapper .value-statement p {
       margin-top: 3%;
       text-align: left; }
+    @media only screen and (min-width: 600px) {
+      .index .value-statement-wrapper .value-statement {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-bottom: 0; }
+        .index .value-statement-wrapper .value-statement:last-child {
+          margin-right: 0; } }
 .index .cta {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 27.49666%;
-  margin-left: 36.25167%;
+  width: 100%;
+  margin-left: 0%;
   margin-top: 5%; }
   .index .cta:last-child {
     margin-right: 0; }
   .index .cta a {
     width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .index .cta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 44.55627%;
+      margin-left: 27.72186%; }
+      .index .cta:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 950px) {
+    .index .cta {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 27.49666%;
+      margin-left: 36.25167%; }
+      .index .cta:last-child {
+        margin-right: 0; } }
 .index .testimonial {
   margin-top: 5%;
   padding: 3% 0;
@@ -389,8 +454,8 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 61.61588%;
-    margin-left: 19.19206%;
+    width: 100%;
+    margin-left: 0%;
     margin-top: 2%;
     margin-bottom: 0;
     font-size: 1.7em;
@@ -398,6 +463,15 @@ header {
     color: #fff; }
     .index .testimonial blockquote:last-child {
       margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .index .testimonial blockquote {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 61.61588%;
+        margin-left: 19.19206%; }
+        .index .testimonial blockquote:last-child {
+          margin-right: 0; } }
 .index .pricing {
   float: left;
   display: block;
@@ -410,16 +484,29 @@ header {
   .index .pricing h2 {
     margin-top: 0;
     margin-bottom: 3%;
-    font-size: 3em; }
+    font-size: 2.5em; }
+    @media only screen and (min-width: 600px) {
+      .index .pricing h2 {
+        font-size: 3em; } }
   .index .pricing .pricing-option {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 100%;
+    margin-bottom: 5%;
     padding: 10px 10px 5px;
     border: 2px solid #ccc; }
     .index .pricing .pricing-option:last-child {
       margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .index .pricing .pricing-option {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-bottom: 0; }
+        .index .pricing .pricing-option:last-child {
+          margin-right: 0; } }
     .index .pricing .pricing-option strong {
       display: block;
       margin-top: 2%;
@@ -447,17 +534,29 @@ header {
   .index .faq h2 {
     margin-bottom: 3%;
     margin-top: 0;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center; }
+    @media only screen and (min-width: 600px) {
+      .index .faq h2 {
+        font-size: 3em; } }
   .index .faq .faq-item {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-bottom: 2%;
+    width: 100%;
+    margin-bottom: 5%;
     vertical-align: top; }
     .index .faq .faq-item:last-child {
       margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .index .faq .faq-item {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-bottom: 2%; }
+        .index .faq .faq-item:last-child {
+          margin-right: 0; } }
     .index .faq .faq-item strong {
       font-size: 1.6em; }
     .index .faq .faq-item p {
@@ -485,13 +584,22 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%;
-    margin-left: 21.32451%;
+    width: 100%;
+    margin-left: 0%;
     font-size: 1.3em; }
     .podcast .podcast-info p:last-child {
       margin-right: 0; }
     .podcast .podcast-info p a {
       color: #36cd62; }
+    @media only screen and (min-width: 600px) {
+      .podcast .podcast-info p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%;
+        margin-left: 21.32451%; }
+        .podcast .podcast-info p:last-child {
+          margin-right: 0; } }
 
 /* ----------------------------------------
   
@@ -513,7 +621,10 @@ footer {
       margin-right: 0; }
     footer nav ul li {
       display: inline-block;
-      margin: 0 2%; }
+      margin: 0 2% 5%; }
+      @media only screen and (min-width: 600px) {
+        footer nav ul li {
+          margin: 0 2%; } }
       footer nav ul li a {
         display: inline-block;
         padding: 10px 10px 2px;
