@@ -196,6 +196,11 @@ header {
         }
       }
     }
+    .active {
+      a {
+        color: $color-1;
+      }
+    }  
     .touch-only {
       display: inline-block;
       @include respond-to(600) {

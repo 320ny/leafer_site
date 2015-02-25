@@ -315,6 +315,8 @@ header {
         border-bottom: 2px solid #36cd62; }
         header ul li a:hover {
           color: #36cd62; }
+    header ul .active a {
+      color: #36cd62; }
     header ul .touch-only {
       display: inline-block; }
       @media only screen and (min-width: 600px) {
