@@ -315,14 +315,11 @@ header {
       display: block;
       width: 200px;
       margin: 0 auto;
+      padding: 2px;
       border-radius: 50%;
-      border: 2px solid #ccc;
-    }
-    span {
-      display: block;
-      margin-top: 2%;
-      color: #fff;
-      font-size: .7em;
+      border: 2px solid #fff;
+      box-shadow: 0 0 1px #fff;
+      -webkit-box-shadow: 0 0 1px #fff;
     }
     blockquote {
       @include span-columns(12);
@@ -335,6 +332,12 @@ header {
       @include respond-to(600) {
         @include span-columns(7.5);
         @include shift(2.25);
+      }
+      span {
+        display: block;
+        margin-top: 2%;
+        color: #ccc;
+        font-size: .7em;
       }
     }
   }

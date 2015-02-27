@@ -445,13 +445,11 @@ header {
     display: block;
     width: 200px;
     margin: 0 auto;
+    padding: 2px;
     border-radius: 50%;
-    border: 2px solid #ccc; }
-  .index .testimonial span {
-    display: block;
-    margin-top: 2%;
-    color: #fff;
-    font-size: .7em; }
+    border: 2px solid #fff;
+    box-shadow: 0 0 1px #fff;
+    -webkit-box-shadow: 0 0 1px #fff; }
   .index .testimonial blockquote {
     float: left;
     display: block;
@@ -474,6 +472,11 @@ header {
         margin-left: 19.19206%; }
         .index .testimonial blockquote:last-child {
           margin-right: 0; } }
+    .index .testimonial blockquote span {
+      display: block;
+      margin-top: 2%;
+      color: #ccc;
+      font-size: .7em; }
 .index .pricing {
   float: left;
   display: block;
