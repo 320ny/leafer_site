@@ -138,6 +138,21 @@ strong {
 .btn {
   @include button;
 }
+.btn2 {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-bottom: 4px solid #777;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #999;
+  font-size: 1.1em;
+  &:hover {
+    @include transition;
+    opacity: .8;
+  }
+}
 hr {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -425,25 +440,47 @@ header {
 
 ---------------------------------------- */
 .podcast {
+  margin-top: 3%;
+  text-align: center;
   .podcast-info {
     @include span-columns(12);
+    @include respond-to(600) {
+      @include span-columns(8);
+      @include shift(2);
+    }
     h2 {
       margin-bottom: 2%;
       text-align: center;
     }
     p {
       @include span-columns(12);
-      @include shift(0);
+      margin-top: 0;
       font-size: 1.3em;
-      a {
-        color: $color-1;
-      }
-      @include respond-to(600) {
-        @include span-columns(7);
-        @include shift(2.5);
+    }
+    .btn {
+      margin-top: 3%;
+    }
+    .btn2 {
+      margin-top: 2%;
+    }
+    .podcast-episode {
+      @include span-columns(12);
+      margin-top: 3%;
+      h3 {
+        margin-bottom: 3%;
+        text-align: center;
       }
     }
   }
+  /*
+  .podcast-logo {
+    @include span-columns(12);
+    @include respond-to(600) {
+      @include span-columns(4);
+      @include omega();
+    }
+  }
+  */
 }
 
 
