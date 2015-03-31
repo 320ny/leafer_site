@@ -694,6 +694,20 @@ footer {
     text-align: center; }
     .contact h4 a {
       color: #36cd62; }
+  .contact .email-link {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 3%;
+    text-align: center; }
+    .contact .email-link:last-child {
+      margin-right: 0; }
+    .contact .email-link a {
+      font-size: 1.5em;
+      color: #2DB453;
+      text-decoration: none;
+      vertical-align: bottom; }
 
 /* ----------------------------------------
   

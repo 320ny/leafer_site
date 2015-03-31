@@ -540,6 +540,17 @@ footer {
       color: $color-1;
     }
   }
+  .email-link {
+    @include span-columns(12);
+    margin-bottom: 3%;
+    text-align: center;
+    a {
+      font-size: 1.5em;
+      color: $color-2;
+      text-decoration: none;
+      vertical-align: bottom;
+    }
+  }
 }
 
 /* ----------------------------------------
