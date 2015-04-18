@@ -592,7 +592,7 @@ header {
 
 ---------------------------------------- */
 .podcast {
-  margin-top: 3%;
+  margin-top: 1%;
   text-align: center; }
   .podcast .podcast-info {
     float: left;
@@ -610,9 +610,15 @@ header {
         margin-left: 17.05961%; }
         .podcast .podcast-info:last-child {
           margin-right: 0; } }
-    .podcast .podcast-info h2 {
-      margin-bottom: 2%;
+    .podcast .podcast-info h3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin: 4% 0 3%;
       text-align: center; }
+      .podcast .podcast-info h3:last-child {
+        margin-right: 0; }
     .podcast .podcast-info p {
       float: left;
       display: block;
