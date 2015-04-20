@@ -296,15 +296,15 @@ header {
   header .logo {
     display: block;
     position: static;
-    width: 123px;
+    width: 150px;
     margin: 3% auto 0; }
     @media only screen and (min-width: 600px) {
       header .logo {
         display: inline-block;
         position: absolute;
-        top: 17px;
-        left: 17px;
-        width: 123px;
+        top: 21px;
+        left: 21px;
+        width: 150px;
         margin-top: 0; } }
   header ul {
     display: block;
@@ -428,7 +428,7 @@ header {
   margin-right: 2.35765%;
   width: 100%;
   margin-left: 0%;
-  margin-top: 5%; }
+  margin-top: 1%; }
   .index .cta:last-child {
     margin-right: 0; }
   .index .cta a {

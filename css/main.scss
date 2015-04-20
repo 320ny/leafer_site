@@ -172,14 +172,14 @@ header {
   .logo {
     display: block;
     position: static;
-    width: 123px;
+    width: 150px;
     margin: 3% auto 0;
     @include respond-to(600) {
       display: inline-block;
       position: absolute;
-      top: 17px;
-      left: 17px;
-      width: 123px;
+      top: 21px;
+      left: 21px;
+      width: 150px;
       margin-top: 0;
     }
   }
@@ -307,7 +307,7 @@ header {
   .cta {
     @include span-columns(12);
     @include shift(0);
-    margin-top: 5%;
+    margin-top: 1%;
     a {
       width: 100%;
     }
