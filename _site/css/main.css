@@ -594,11 +594,52 @@ header {
 .podcast {
   margin-top: 1%;
   text-align: center; }
-  .podcast .podcast-info {
+  .podcast .latest-podcast {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
+    .podcast .latest-podcast:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .podcast .latest-podcast {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
+        .podcast .latest-podcast:last-child {
+          margin-right: 0; } }
+    .podcast .latest-podcast h3 {
+      margin: 5% 0 3%;
+      text-align: center; }
+  .podcast .podcast-episode {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 3%; }
+    .podcast .podcast-episode:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .podcast .podcast-episode {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
+        .podcast .podcast-episode:last-child {
+          margin-right: 0; } }
+    .podcast .podcast-episode h3 {
+      margin: 5% 0 3%;
+      text-align: center; }
+  .podcast .podcast-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 1%; }
     .podcast .podcast-info:last-child {
       margin-right: 0; }
     @media only screen and (min-width: 600px) {
@@ -610,15 +651,6 @@ header {
         margin-left: 17.05961%; }
         .podcast .podcast-info:last-child {
           margin-right: 0; } }
-    .podcast .podcast-info h3 {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin: 4% 0 3%;
-      text-align: center; }
-      .podcast .podcast-info h3:last-child {
-        margin-right: 0; }
     .podcast .podcast-info p {
       float: left;
       display: block;
@@ -628,26 +660,11 @@ header {
       font-size: 1.3em; }
       .podcast .podcast-info p:last-child {
         margin-right: 0; }
+    .podcast .podcast-info a {
+      color: #2DB453; }
     .podcast .podcast-info .btn {
-      margin-top: 3%; }
-    .podcast .podcast-info .btn2 {
-      margin-top: 2%; }
-    .podcast .podcast-info .podcast-episode {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-top: 3%; }
-      .podcast .podcast-info .podcast-episode:last-child {
-        margin-right: 0; }
-      .podcast .podcast-info .podcast-episode h3 {
-        margin: 5% 0 3%;
-        text-align: center; }
-    .podcast .podcast-info .subscribe-link {
-      margin-top: 4.5%;
-      margin-bottom: 0; }
-      .podcast .podcast-info .subscribe-link a {
-        color: #2DB453; }
+      margin-bottom: 3.5%;
+      color: #fff; }
 
 /* ----------------------------------------
   
