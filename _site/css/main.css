@@ -593,29 +593,50 @@ header {
 ---------------------------------------- */
 .podcast {
   margin-top: 1%;
-  text-align: center; }
+  text-align: left; }
   .podcast .podcast-episode-wrapper {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 100%;
+    margin-left: 0%;
     margin-top: 5%; }
     .podcast .podcast-episode-wrapper:last-child {
       margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .podcast .podcast-episode-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
+        .podcast .podcast-episode-wrapper:last-child {
+          margin-right: 0; } }
     .podcast .podcast-episode-wrapper .podcast-episode {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-bottom: 3%; }
+      margin-bottom: 7%; }
       .podcast .podcast-episode-wrapper .podcast-episode:last-child {
         margin-right: 0; }
+      .podcast .podcast-episode-wrapper .podcast-episode h4 {
+        margin: 0;
+        font-size: 2em; }
+        .podcast .podcast-episode-wrapper .podcast-episode h4 a {
+          text-decoration: none; }
+      .podcast .podcast-episode-wrapper .podcast-episode .date {
+        display: inline-block;
+        margin-bottom: 3%;
+        margin-top: 0;
+        color: #999;
+        font-size: 1.2em; }
   .podcast .podcast-info {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    margin-top: 5%;
+    margin-left: 0%;
     text-align: left; }
     .podcast .podcast-info:last-child {
       margin-right: 0; }
@@ -624,8 +645,8 @@ header {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 40.29137%;
-        margin-left: 8.5298%; }
+        width: 65.88078%;
+        margin-left: 17.05961%; }
         .podcast .podcast-info:last-child {
           margin-right: 0; } }
     .podcast .podcast-info p {
@@ -642,6 +663,16 @@ header {
     .podcast .podcast-info .btn {
       margin-top: 3%;
       color: #fff; }
+
+.podcast-page {
+  text-align: left; }
+  .podcast-page h2 {
+    margin-bottom: 2%;
+    font-size: 2.3em; }
+  .podcast-page .podcast-episode-wrapper {
+    margin-top: 0; }
+    .podcast-page .podcast-episode-wrapper .podcast-episode {
+      margin-bottom: 5%; }
 
 /* ----------------------------------------
   
