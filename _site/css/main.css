@@ -310,12 +310,13 @@ header {
     display: block;
     width: 100%;
     height: 70px;
-    margin: 0 auto;
+    margin: 3% auto 0;
     text-align: center; }
     @media only screen and (min-width: 600px) {
       header ul {
         width: 60%;
-        height: 75px; } }
+        height: 75px;
+        margin-top: 0; } }
     header ul li {
       display: inline-block;
       margin: 0 2%;
@@ -325,12 +326,16 @@ header {
           margin: 0 3%; } }
       header ul li a {
         display: inline-block;
-        padding: 26px 10px 2px;
-        font-size: 1.2em;
+        padding: 26px 7px 2px;
+        font-size: 1em;
         text-decoration: none;
         border-bottom: 2px solid #36cd62; }
         header ul li a:hover {
           color: #36cd62; }
+        @media only screen and (min-width: 600px) {
+          header ul li a {
+            padding: 26px 10px 2px;
+            font-size: 1.2em; } }
     header ul .active a {
       color: #36cd62; }
     header ul .touch-only {
@@ -667,12 +672,14 @@ header {
 .podcast-page {
   text-align: left; }
   .podcast-page h2 {
+    margin-top: 0;
     margin-bottom: 2%;
-    font-size: 2.3em; }
-  .podcast-page .podcast-episode-wrapper {
-    margin-top: 0; }
-    .podcast-page .podcast-episode-wrapper .podcast-episode {
-      margin-bottom: 5%; }
+    font-size: 2em; }
+    @media only screen and (min-width: 600px) {
+      .podcast-page h2 {
+        font-size: 2.3em; } }
+  .podcast-page .podcast-episode-wrapper .podcast-episode {
+    margin-bottom: 5%; }
 
 /* ----------------------------------------
   
