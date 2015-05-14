@@ -422,10 +422,10 @@ header {
       vertical-align: top;
       @include respond-to(600) {
         @include span-columns(6);
-        margin-bottom: 2%;
+        margin-bottom: 4%;
       }
       strong {
-        font-size: 1.6em;
+        font-size: 1.7em;
       }
       p {
         margin-top: 2%;
