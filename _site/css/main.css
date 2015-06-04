@@ -622,7 +622,7 @@ header {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-bottom: 7%; }
+      margin-bottom: 10%; }
       .podcast .podcast-episode-wrapper .podcast-episode:last-child {
         margin-right: 0; }
       .podcast .podcast-episode-wrapper .podcast-episode h4 {
@@ -630,6 +630,8 @@ header {
         font-size: 2em; }
         .podcast .podcast-episode-wrapper .podcast-episode h4 a {
           text-decoration: none; }
+      .podcast .podcast-episode-wrapper .podcast-episode p {
+        font-size: 1.3em; }
       .podcast .podcast-episode-wrapper .podcast-episode .date {
         display: inline-block;
         margin-bottom: 3%;
