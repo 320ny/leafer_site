@@ -599,6 +599,33 @@ header {
 .podcast {
   margin-top: 1%;
   text-align: left; }
+  .podcast .podcast-summary {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-bottom: 1%;
+    text-align: center;
+    border-bottom: 2px solid #2DB453; }
+    .podcast .podcast-summary:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 600px) {
+      .podcast .podcast-summary {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
+        .podcast .podcast-summary:last-child {
+          margin-right: 0; } }
+    .podcast .podcast-summary p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      font-size: 1.6em; }
+      .podcast .podcast-summary p:last-child {
+        margin-right: 0; }
   .podcast .podcast-episode-wrapper {
     float: left;
     display: block;

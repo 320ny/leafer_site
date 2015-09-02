@@ -447,6 +447,20 @@ header {
 .podcast {
   margin-top: 1%;
   text-align: left;
+  .podcast-summary {
+    @include span-columns(12);
+    padding-bottom: 1%;
+    text-align: center;
+    border-bottom: 2px solid $color-2;
+    @include respond-to(600) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+    p {
+      @include span-columns(12);
+      font-size: 1.6em;
+    }
+  }
   .podcast-episode-wrapper {
     @include span-columns(12);
     @include shift(0);
